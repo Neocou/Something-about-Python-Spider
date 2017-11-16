@@ -5,10 +5,7 @@ import pymysql
 import multiprocessing
 from multiprocessing import Pool
 import time
-##################################################
-##项目有问题，加载阻塞，导致任务缺失(我猜是这样吧),#
-##等待学习scrapy                                 #
-##################################################
+
 
 
 
