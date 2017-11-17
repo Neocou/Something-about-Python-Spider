@@ -38,7 +38,7 @@ down_novel_list =[]
 down_chapter_list =[]
 #数据库类
 class Sql(object):
-    conn = pymysql.connect('127.0.0.1','root','a425549873','novel',use_unicode=True, charset="utf8")
+    conn = pymysql.connect('127.0.0.1','root','password','novel',use_unicode=True, charset="utf8")
     #增加小说
     def addnovel(self,sort,sortname,novelname,imgurl,description,status,author):
         try:   
