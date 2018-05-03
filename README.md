@@ -57,3 +57,12 @@
 ![video2](https://github.com/Neocou/Something-about-Python-Spider/blob/master/pic/video2.PNG)
 
 ### 源代码都有基本注释，应该比较清楚，另外我还有一个项目是使用scrapy框架爬取全站的图片,有兴趣的可以转战到[Python-Scrapy-Mzitu](https://github.com/Neocou/Python-Scrapy-Mzitu)
+
+### 补充
+novel.py涉及到两张表，原始表我也没有存，不过比较简单，一个是小说表，一个是章节表。
+根据代码中的两条插入语句，应该是很好建表的，如有问题对应修改吧。另外其他代码如果有用到数据库部分，应该都在代码看得出来，没有复杂的建表过程。
+
+insert ignore into novel(sort,sortname,novelname,imgurl,description,status,author)
+
+insert ignore into chapter(novelid,title,content) values(%s,'%s','%s')
+
